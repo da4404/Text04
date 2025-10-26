@@ -17,6 +17,12 @@ public class Heavy extends Vehicles
     {
         return trailers;
     }
+    @Override
+    public double exhaust()
+    {
+        double normalInfection = super.exhaust();
+        return normalInfection + 500 * this.trailers;
+    }
 
     @Override
     public String toString()

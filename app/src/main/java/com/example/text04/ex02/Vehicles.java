@@ -57,6 +57,10 @@ public class Vehicles
     {
         return pollutionPerMinute;
     }
+    public double exhaust()
+    {
+        return pollutionPerMinute * 60;
+    }
 
     public String toString()
     {

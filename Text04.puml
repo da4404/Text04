@@ -1,0 +1,166 @@
+@startuml
+class com.example.text04.ex02.Tractor {
+- String trailerTypes
++ String getTrailerTypes()
++ void setTrailerTypes(String)
++ String toString()
+}
+
+
+class com.example.text04.ex1.ShoppingCart {
+- Product[] products
++ Product[] getProducts()
++ void setProducts(Product[])
++ double calculateTotal()
+}
+
+
+class com.example.text04.ex02.Vehicles {
+- String carNumber
+- int age
+- int wheels
+- String steeringType
+- double pollutionPerMinute
++ String getCarNumber()
++ void setCarNumber(String)
++ void setAge(int)
++ int getAge()
++ void setWheels(int)
++ int getWheels()
++ void setSteeringType(String)
++ String getSteeringType()
++ void setPollutionPerMinute(double)
++ double getPollutionPerMinute()
++ double exhaust()
++ String toString()
+}
+
+
+class com.example.text04.ex02.Bicycle {
+- boolean hasBasket
++ void setHasBasket(boolean)
++ boolean getHasBasket()
++ String toString()
+}
+
+
+class com.example.text04.ex1.Clothing {
+- int fabric
++ int getFabric()
++ void setFabric(int)
++ String getDec()
+}
+
+
+class com.example.text04.ex02.Cart {
+- double chargingTime
++ void setChargingTime(double)
++ double getChargingTime()
++ double exhaust()
++ void hitchhikers()
++ String toString()
+}
+
+
+class com.example.text04.ex02.Light {
+- boolean hasEngine
++ void setHasEngine(boolean)
++ boolean getHasEngine()
++ String toString()
+}
+
+
+class com.example.text04.ex1.Electronics {
+- int valt
++ int getValt()
++ void setValt(int)
++ String getDec()
+}
+
+
+class com.example.text04.ex1.Book {
+- int pages
++ String getDec()
++ int getPages()
++ void setPages(int)
+}
+
+
+class com.example.text04.ex02.Ferrari {
+- String color
++ String getColor()
++ void setColor(String)
++ String toString()
+}
+
+
+class com.example.text04.MainActivity {
+# void onCreate(Bundle)
+}
+
+class com.example.text04.ex02.Heavy {
+- int trailers
++ void setTrailers(int)
++ int getTrailers()
++ double exhaust()
++ String toString()
+}
+
+
+class com.example.text04.ex02.Regular {
+- int numOfPassengers
++ int getNumOfPassengers()
++ void setNumOfPassengers(int)
++ double exhaust()
++ void noise()
++ void hitchhikers()
++ String toString()
+}
+
+
+class com.example.text04.ex02.Truck {
+- double maxLoad
++ double getMaxLoad()
++ void setMaxLoad(double)
++ double exhaust()
++ String toString()
+}
+
+
+class com.example.text04.ex1.Product {
+- String name
+- int pracie
+- String dec
++ int getPracie()
++ String getDec()
++ String getName()
++ void setDec(String)
++ void setName(String)
++ void setPracie(int)
+}
+
+
+class com.example.text04.ex02.bulldozer {
+- String colorBuuldozer
++ String getColorBuuldozer()
++ void setColorBuuldozer(String)
++ String toString()
+}
+
+
+
+
+com.example.text04.ex02.Heavy <|-- com.example.text04.ex02.Tractor
+com.example.text04.ex02.Light <|-- com.example.text04.ex02.Bicycle
+com.example.text04.ex1.Product <|-- com.example.text04.ex1.Clothing
+com.example.text04.ex02.Light <|-- com.example.text04.ex02.Cart
+com.example.text04.ex02.Vehicles <|-- com.example.text04.ex02.Light
+com.example.text04.ex1.Product <|-- com.example.text04.ex1.Electronics
+com.example.text04.ex1.Product <|-- com.example.text04.ex1.Book
+com.example.text04.ex02.Regular <|-- com.example.text04.ex02.Ferrari
+androidx.appcompat.app.AppCompatActivity <|-- com.example.text04.MainActivity
+com.example.text04.ex02.Vehicles <|-- com.example.text04.ex02.Heavy
+com.example.text04.ex02.Vehicles <|-- com.example.text04.ex02.Regular
+com.example.text04.ex02.Heavy <|-- com.example.text04.ex02.Truck
+com.example.text04.ex02.Tractor <|-- com.example.text04.ex02.bulldozer
+@enduml

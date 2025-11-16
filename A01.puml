@@ -1,0 +1,52 @@
+@startuml
+class com.example.text04.ex1.Book {
+- int pages
++ String getDec()
++ int getPages()
++ void setPages(int)
+}
+
+
+class com.example.text04.ex1.ShoppingCart {
+- Product[] products
++ Product[] getProducts()
++ void setProducts(Product[])
++ double calculateTotal()
+}
+
+
+class com.example.text04.ex1.Clothing {
+- int fabric
++ int getFabric()
++ void setFabric(int)
++ String getDec()
+}
+
+
+class com.example.text04.ex1.Product {
+- String name
+- int pracie
+- String dec
++ int getPracie()
++ String getDec()
++ String getName()
++ void setDec(String)
++ void setName(String)
++ void setPracie(int)
+}
+
+
+class com.example.text04.ex1.Electronics {
+- int valt
++ int getValt()
++ void setValt(int)
++ String getDec()
+}
+
+
+
+
+com.example.text04.ex1.Product <|-- com.example.text04.ex1.Book
+com.example.text04.ex1.Product <|-- com.example.text04.ex1.Clothing
+com.example.text04.ex1.Product <|-- com.example.text04.ex1.Electronics
+@enduml

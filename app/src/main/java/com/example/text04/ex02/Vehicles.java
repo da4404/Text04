@@ -8,7 +8,7 @@ public class Vehicles
     private String steeringType;
     private double pollutionPerMinute;
 
-    public Vehicles(String carNumber, int age, int wheels, String steeringType, double pollutionPerMinute) {
+    public Vehicles( String carNumber, int age, int wheels, String steeringType, double pollutionPerMinute) {
         this.carNumber = carNumber;
         this.age = age;
         this.wheels = wheels;
